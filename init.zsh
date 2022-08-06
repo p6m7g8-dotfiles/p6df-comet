@@ -77,12 +77,12 @@ p6df::modules::comet::prompt::line() {
 #  Returns:
 #	str - str
 #
-#  Environment:	 P6_COMET_USER
+#  Environment:	 P6_COMET_WORKSPACE
 #>
 ######################################################################
 p6_comet_prompt_info() {
 
-  local str="comet:\t  $P6_COMET_USER in $P6_COMET_WORKSPACE"
+  local str="comet:\t\t  w:$P6_COMET_WORKSPACE u:$P6_COMET_USER"
 
   p6_return_str "$str"
 }
