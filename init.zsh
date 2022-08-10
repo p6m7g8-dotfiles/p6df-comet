@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 ######################################################################
 #<
 #
@@ -24,6 +25,8 @@ p6df::modules::comet::langs() {
   pip install "cookiecutter>1.7.0"
 
   pip install comet_ml
+
+  p6_return_void
 }
 
 ######################################################################
@@ -43,6 +46,8 @@ p6df::modules::comet::init() {
   p6_env_export "COMET_API_KEY" "$P6_COMET_API_KEY"
 
   p6df::modules::comet::prompt::init
+
+  p6_return_void
 }
 
 ######################################################################
