@@ -47,9 +47,7 @@
 - p6df::modules::comet::deps()
 - p6df::modules::comet::init()
 - p6df::modules::comet::langs()
-- p6df::modules::comet::prompt::init()
-- p6df::modules::comet::prompt::line()
-- str str = p6_comet_prompt_info()
+- str str = p6df::modules::comet::prompt::line()
 
 
 
