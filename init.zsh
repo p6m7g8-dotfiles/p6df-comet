@@ -65,3 +65,38 @@ p6df::modules::comet::prompt::line() {
 
   p6_return_str "$str"
 }
+
+######################################################################
+#<
+#
+# Function: p6df::modules::comet::vscodes()
+#
+#>
+######################################################################
+p6df::modules::comet::vscodes() {
+
+  code --install-extension comet.ml.comet
+
+  p6_return_void
+}
+
+######################################################################
+#<
+#
+# Function: p6df::modules::comet::clones()
+#
+#  Environment:	 P6_DFZ_SRC_FOCUSED_DIR
+#>
+######################################################################
+p6df::modules::comet::clones() {
+
+  p6_github_login_clone "comet-ml" "$P6_DFZ_SRC_FOCUSED_DIR"
+
+  p6_return_void
+}
+
+# https://www.comet.ml/
+# https://github.com/comet-ml/issue-tracking
+# https://github.com/comet-ml/comet-examples
+# https://www.comet.ml/docs/
+
