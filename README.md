@@ -44,6 +44,7 @@
 
 #### p6df-comet/init.zsh:
 
+- p6df::modules::comet::clones()
 - p6df::modules::comet::deps()
 - p6df::modules::comet::init()
 - p6df::modules::comet::langs()
