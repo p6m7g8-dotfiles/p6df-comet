@@ -32,12 +32,18 @@ p6df::modules::comet::langs() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::comet::init()
+# Function: p6df::modules::comet::init(_module, dir)
+#
+#  Args:
+#	_module -
+#	dir -
 #
 #  Environment:	 COMET_API_KEY COMET_LOGGING_FILE COMET_LOGGING_FILE_LEVEL
 #>
 ######################################################################
 p6df::modules::comet::init() {
+  local _module="$1"
+  local dir="$2"
 
   p6_env_export "COMET_LOGGING_FILE_LEVEL" "debug"
   p6_env_export "COMET_LOGGING_FILE" "/tmp/comet.debug.log"
@@ -60,7 +66,7 @@ p6df::modules::comet::init() {
 ######################################################################
 p6df::modules::comet::prompt::line() {
 
-  local str=""
+  local str
 
   if ! p6_string_blank "$P6_COMET_USER"; then
     str="comet:\t\t  w:$P6_COMET_WORKSPACE u:$P6_COMET_USER"

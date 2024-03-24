@@ -10,8 +10,7 @@
   - [Summary](#summary)
   - [Contributing](#contributing)
   - [Code of Conduct](#code-of-conduct)
-  - [Changes](#changes)
-    - [Usage](#usage)
+  - [Usage](#usage)
   - [Author](#author)
 
 ### Badges
@@ -34,11 +33,13 @@
 
 - [Code of Conduct](https://github.com/p6m7g8/.github/blob/master/CODE_OF_CONDUCT.md)
 
-## Changes
-
-- [Change Log](CHANGELOG.md)
-
 ## Usage
+
+
+### Aliases
+
+
+### Functions
 
 ### p6df-comet:
 
@@ -46,7 +47,7 @@
 
 - p6df::modules::comet::clones()
 - p6df::modules::comet::deps()
-- p6df::modules::comet::init()
+- p6df::modules::comet::init(_module, dir)
 - p6df::modules::comet::langs()
 - str str = p6df::modules::comet::prompt::line()
 
